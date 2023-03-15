@@ -37,17 +37,18 @@ class Feedback extends Component {
               <h1 className="heading">
                 How satisfied are you with our customer support performance
               </h1>
-              <div className="emojis-container">
+              <ul className="emojis-container">
                 {emojis.map(eachObj => (
-                  <img
-                    className="emoji-icon"
-                    alt={eachObj.name}
-                    key={eachObj.id}
-                    src={eachObj.imageUrl}
-                    onClick={this.onClickDisplayThankYou}
-                  />
+                  <li key={eachObj.id}>
+                    <img
+                      className="emoji-icon"
+                      alt={eachObj.name}
+                      src={eachObj.imageUrl}
+                      onClick={this.onClickDisplayThankYou}
+                    />
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           )}
         </div>

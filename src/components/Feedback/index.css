@@ -7,10 +7,16 @@
   align-items: center;
 }
 .content-bg-container {
-  width: 40%;
+  width: 80%;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 50px;
+  padding: 20px;
+}
+@media screen and (min-width: 576px) {
+  .content-bg-container {
+    width: 60%;
+    padding: 50px;
+  }
 }
 .content-container {
   display: flex;
@@ -23,17 +29,29 @@
 .heading {
   font-family: 'Roboto';
   color: #0f172a;
-  font-size: 28px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
 }
 
 .emoji-icon {
-  width: 50px;
+  width: 30px;
+}
+@media (min-width: 768px) {
+  .emoji-icon {
+    width: 50px;
+  }
 }
 .emojis-container {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
+  list-style-type: none;
+  padding-left: 0;
 }
 .love-image {
   width: 50px;
